@@ -23,7 +23,7 @@ const experts=[
     {
         img:mechanic3,
         name:'Aldon Smith',
-        expertize:'Engine Mechanicv Expert'
+        expertize:'Engine Mechanic Expert'
     },
     {
         img:mechanic4,
@@ -38,7 +38,7 @@ const experts=[
     {
         img:mechanic6,
         name:'Rande Buruya',
-        expertize:'Coloring Experts'
+        expertize:'Color Experts'
     },
 ]
 
@@ -48,7 +48,7 @@ const Experts = () => {
             <h1 className="mt-5 mb-5 fs-1 fw-2 text-white bg-primary py-3 mb-3 rounded-pill">Our Experts</h1>
             <div className="row">
                 {
-                    experts.map(expert=><Expert expert={expert}></Expert>
+                    experts.map(expert=><Expert expert={expert} key={expert.name}></Expert>
                         )
                 }
 
