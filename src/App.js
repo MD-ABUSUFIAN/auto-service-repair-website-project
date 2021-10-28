@@ -10,6 +10,9 @@ import Services from './Pages/Home/Services/Services';
 import Experts from './Pages/Home/Experts/Experts';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Register from './Pages/Register/Register';
+import AddService from './Pages/AddService/AddService';
+import ManageServices from './Pages/ManageServices/ManageServices';
 
 
 function App() {
@@ -25,8 +28,23 @@ function App() {
                         <Route  path="/home">
                             <Home></Home>
                         </Route>
+                        <Route  path="/services">
+                           <Services></Services>
+                        </Route>
+                        <Route  path="/experts">
+                            <Experts></Experts>
+                        </Route>
                         <Route  path="/login">
                            <Login></Login>
+                        </Route>
+                        <Route  path="/register">
+                           <Register></Register>
+                        </Route>
+                        <Route  path="/addservice">
+                           <AddService></AddService>
+                        </Route>
+                        <Route  path="/ManageServices">
+                           <ManageServices></ManageServices>
                         </Route>
                         <PrivateRoute  path="/booking/:serviceId">
                            <Booking></Booking>
